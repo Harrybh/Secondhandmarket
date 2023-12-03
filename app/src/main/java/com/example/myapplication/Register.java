@@ -24,7 +24,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         usename = this.findViewById(R.id.usename);
-        usepwd =  this.findViewById(R.id.usepwd);				
+        usepwd =  this.findViewById(R.id.usepwd);
         usepwd2 = this.findViewById(R.id.usepwd2);
         submit =   this.findViewById(R.id.submit);
         mysql = new Mysql(this,"Userinfo",null,1);

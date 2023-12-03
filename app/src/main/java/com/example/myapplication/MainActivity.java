@@ -12,10 +12,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     EditText name,pwd;
-    Button btnlogin,btnreg;
+    Button btnlogin;
+    TextView btnreg;
     Mysql mysql;
     SQLiteDatabase db;
     SharedPreferences sp1,sp2;
@@ -23,9 +25,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        name = this.findViewById(R.id.name);
-        pwd = this.findViewById(R.id.pwd);
-        btnlogin = this.findViewById(R.id.login);
+        name = this.findViewById(R.id.usename);
+        pwd = this.findViewById(R.id.usepwd2);
+        btnlogin = this.findViewById(R.id.submit);
         btnreg = this.findViewById(R.id.reg);
         sp1 =  this.getSharedPreferences("useinfo",this.MODE_PRIVATE);
         sp2 = this.getSharedPreferences("username",this.MODE_PRIVATE);
