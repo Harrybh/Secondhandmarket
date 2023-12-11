@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductInfoActivity">
+
+    <!-- 添加商品页面的布局 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- 商品名称输入框 -->
+        <EditText
+            android:id="@+id/product_name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="商品名称" />
+
+        <!-- 图片选择按钮 -->
+        <Button
+            android:id="@+id/select_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择图片" />
+
+        <!-- 显示选定图片的ImageView -->
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/placeholder_image" />
+
+        <!-- 商品价格输入框 -->
+        <EditText
+            android:id="@+id/product_price_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="商品价格"
+            android:minHeight="48dp" />
+
+        <!-- 商品描述输入框 -->
+
+        <!-- 添加商品按钮 -->
+        <EditText
+            android:id="@+id/product_note_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:hint="描述" />
+
+        <Button
+            android:id="@+id/add_product_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加商品" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
