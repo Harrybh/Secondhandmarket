@@ -16,6 +16,9 @@
             android:name=".AddProductInfoActivity"
             android:exported="false" />
         <activity
+            android:name=".PersonalInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".Welcome"
             android:exported="false" />
         <activity
