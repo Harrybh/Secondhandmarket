@@ -21,9 +21,9 @@ public class ContactDetailsActivity extends AppCompatActivity {
         ProductInfo contact = getIntent().getParcelableExtra("contact");
         int rid=contact.getProduct_img();
         String name = contact.getProduct_title();
-        String region = contact.getProduct_style();
-        String gender = contact.getProduct_size();
-        String type = contact.getProduct_size();
+        String region = contact.getProduct_description();
+        String gender = contact.getProduct_seller();
+        String type = contact.getProduct_price();
         textView1=findViewById(R.id.textViewa2);
         textView2=findViewById(R.id.textViewb2);
         textView3=findViewById(R.id.textViewc2);

@@ -6,15 +6,15 @@ public class ProductInfo implements Parcelable{
     private int _id;
     private int product_img;
     private String product_title;
-    private String product_style;
-    private String product_size;
+    private String product_description;
+    private String product_seller;
     private String product_price;
 
     public ProductInfo(Parcel in) {//从 Parcel 中读取数据并初始化对象
         this.product_img = in.readInt();
         this.product_title = in.readString();
-        this.product_style = in.readString();
-        this.product_size = in.readString();
+        this.product_description = in.readString();
+        this.product_seller = in.readString();
         this.product_price = in.readString();
 
 
@@ -22,11 +22,11 @@ public class ProductInfo implements Parcelable{
 
     }
 
-    public ProductInfo(int _id,int product_img, String product_title, String product_style, String product_size, String product_price) {
+    public ProductInfo(int _id,int product_img, String product_title, String product_description, String product_seller, String product_price) {
         this._id = _id;
         this.product_title = product_title;
-        this.product_style = product_style;
-        this.product_size = product_size;
+        this.product_description = product_description;
+        this.product_seller = product_seller;
         this.product_price = product_price;
         this.product_img = product_img;
     }
@@ -56,20 +56,20 @@ public class ProductInfo implements Parcelable{
         this.product_title = product_title;
     }
 
-    public String getProduct_style() {
-        return product_style;
+    public String getProduct_description() {
+        return product_description;
     }
 
-    public void setProduct_style(String product_style) {
-        this.product_style = product_style;
+    public void setProduct_description(String product_description) {
+        this.product_description = product_description;
     }
 
-    public String getProduct_size() {
-        return product_size;
+    public String getProduct_seller() {
+        return product_seller;
     }
 
-    public void setProduct_size(String product_size) {
-        this.product_size = product_size;
+    public void setProduct_seller(String product_seller) {
+        this.product_seller = product_seller;
     }
 
     public String getProduct_price() {
@@ -101,8 +101,8 @@ public class ProductInfo implements Parcelable{
     public void writeToParcel(Parcel parcel, int i) {///// 将对象数据写入 Parcel 中
         parcel.writeInt(product_img);
         parcel.writeString(product_title);
-        parcel.writeString(product_style);
-        parcel.writeString(product_size);
+        parcel.writeString(product_description);
+        parcel.writeString(product_seller);
         parcel.writeString(product_price);
 
     }

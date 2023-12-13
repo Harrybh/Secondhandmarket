@@ -3,11 +3,9 @@ package com.example.myapplication;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
-
 import java.util.ArrayList;
 import java.util.List;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,8 +44,7 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
 
         //设置数据
         holder.tv_title.setText(productInfo.getProduct_title());
-        holder.tv_style.setText("风格："+productInfo.getProduct_style());
-        holder.tv_size.setText("尺寸："+productInfo.getProduct_size());
+        holder.tv_size.setText("卖家："+productInfo.getProduct_seller());
         holder.tv_price.setText("¥ "+ productInfo.getProduct_price());
         holder.img_product.setImageResource(productInfo.getProduct_img());
 

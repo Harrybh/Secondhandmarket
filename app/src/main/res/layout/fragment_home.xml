@@ -12,10 +12,11 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_home"
         android:layout_width="match_parent"
-        tools:listitem="@layout/item"
         android:layout_height="match_parent"
+        android:layout_below="@id/titlebar"
+        android:layout_marginTop="2dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_below="@id/titlebar" />
+        tools:listitem="@layout/item" />
 
     <ImageButton
         android:id="@+id/ib_top"
